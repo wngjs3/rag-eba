@@ -4,7 +4,7 @@ from typing import List
 from langchain.embeddings.base import Embeddings
 
 class BedrockEmbeddings(Embeddings):
-    def __init__(self, model_id: str = "amazon.titan-embed-text-v1"):
+    def __init__(self, model_id: str = "amazon.titan-embed-text-v2:0"):
         self.client = boto3.client('bedrock-runtime', region_name='ap-northeast-2')
         self.model_id = model_id
     

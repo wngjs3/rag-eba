@@ -5,7 +5,7 @@ from typing import Dict, Optional
 class BedrockClaude:
     def __init__(
         self, 
-        model_id: str = "anthropic.claude-3-sonnet-20240320-v1:0",
+        model_id: str = "anthropic.claude-3-5-sonnet-20240620-v1:0",
         max_tokens: int = 300,
         temperature: float = 0.1,
         top_p: float = 0.9
