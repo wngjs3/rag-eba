@@ -27,3 +27,11 @@ AWS Bedrock과 OpenSearch Serverless를 활용한 RAG 시스템
 ```bash
 ./scripts/make-scripts-executable.sh
 ```
+
+
+apt-get update && apt-get install -y \
+    libmagic1 \
+    poppler-utils \
+    tesseract-ocr \
+    libreoffice \
+    pandoc

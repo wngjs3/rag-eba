@@ -6,8 +6,14 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     git \
     curl \
+    libmagic1 \
+    poppler-utils \
+    tesseract-ocr \
+    libreoffice \
+    pandoc \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
+
 
 # 파이썬 패키지 설치
 COPY requirements.txt .

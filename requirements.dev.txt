@@ -2,4 +2,9 @@
 -r requirements.txt
 
 # 개발 환경 전용 패키지
-ipykernel>=6.0.0  # VS Code에서 Jupyter 노트북 실행을 위한 최소 요구사항
+jupyter==1.0.0
+jupyterlab>=4.0.0
+ipykernel>=6.0.0
+black>=23.0.0  # 코드 포매터
+pylint>=2.17.0  # 코드 린터
+pytest>=7.0.0  # 테스트 프레임워크
